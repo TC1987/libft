@@ -6,7 +6,7 @@
 /*   By: tcho <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 03:16:24 by tcho              #+#    #+#             */
-/*   Updated: 2018/11/09 22:21:20 by tcho             ###   ########.fr       */
+/*   Updated: 2018/11/09 23:24:37 by tcho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <string.h>
 #include "libft.h"
 
-static char *ft_strndup(const char *s1, size_t n)
+static char	*ft_strndup(const char *s1, size_t n)
 {
 	size_t	i;
 	char	*str;
@@ -31,12 +31,12 @@ static char *ft_strndup(const char *s1, size_t n)
 	return (str);
 }
 
-static int ft_isspace(char c)
+static int	ft_isspace(char c)
 {
 	return (c == ' ' || (c >= 9 && c <= 13));
 }
 
-char	*ft_strtrim(char const *s)
+char		*ft_strtrim(char const *s)
 {
 	int		i;
 	int		j;

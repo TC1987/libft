@@ -6,7 +6,7 @@
 /*   By: tcho <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 03:00:06 by tcho              #+#    #+#             */
-/*   Updated: 2018/11/09 20:06:13 by tcho             ###   ########.fr       */
+/*   Updated: 2018/11/09 23:23:54 by tcho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {
-	int i;
-	int j;
-	char *result;
-	char res;
+	int		i;
+	int		j;
+	char	*result;
+	char	res;
 
 	i = 0;
 	j = 0;

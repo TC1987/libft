@@ -6,7 +6,7 @@
 /*   By: tcho <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/18 00:19:57 by tcho              #+#    #+#             */
-/*   Updated: 2018/11/09 17:48:13 by tcho             ###   ########.fr       */
+/*   Updated: 2018/11/09 23:23:34 by tcho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 #include <string.h>
 #include "libft.h"
 
-t_list *ft_lstnew(void const *content, size_t content_size)
+t_list	*ft_lstnew(void const *content, size_t content_size)
 {
-	t_list *node;
-	size_t size_copy;
-	void *content_copy;
+	t_list	*node;
+	size_t	size_copy;
+	void	*content_copy;
 
 	if (!(node = (t_list *)malloc(sizeof(t_list))))
 		return (NULL);

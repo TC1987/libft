@@ -6,7 +6,7 @@
 /*   By: tcho <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 00:38:55 by tcho              #+#    #+#             */
-/*   Updated: 2018/11/09 00:24:01 by tcho             ###   ########.fr       */
+/*   Updated: 2018/11/09 23:20:32 by tcho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	unsigned char	*str;
 	unsigned char	to_find;
 	size_t			i;
-	
+
 	str = (unsigned char *)s;
 	to_find = (unsigned char)c;
 	i = 0;

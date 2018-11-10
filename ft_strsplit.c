@@ -6,7 +6,7 @@
 /*   By: tcho <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 22:49:00 by tcho              #+#    #+#             */
-/*   Updated: 2018/11/09 21:59:12 by tcho             ###   ########.fr       */
+/*   Updated: 2018/11/09 23:19:58 by tcho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,9 +73,8 @@ char		**ft_strsplit(char const *s, char c)
 
 	i = 0;
 	index = 0;
-	if (!s)
-		return (NULL);
-	if (!(result = (char **)malloc(sizeof(char *) * (ft_word_count(s, c) + 1))))
+	if (!s || !(result = (char **)malloc(sizeof(char *) *
+					(ft_word_count(s, c) + 1))))
 		return (NULL);
 	while (s[i])
 	{

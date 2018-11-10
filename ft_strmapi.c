@@ -6,7 +6,7 @@
 /*   By: tcho <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 22:47:07 by tcho              #+#    #+#             */
-/*   Updated: 2018/11/09 20:06:05 by tcho             ###   ########.fr       */
+/*   Updated: 2018/11/09 23:25:24 by tcho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned int i;
-	unsigned int j;
-	char *result;
-	char res;
+	unsigned int	i;
+	unsigned int	j;
+	char			*result;
+	char			res;
 
 	i = 0;
 	j = 0;
@@ -38,4 +38,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[j] = '\0';
 	return (result);
 }
-
