@@ -1,23 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_word_length.c                                   :+:      :+:    :+:   */
+/*   ft_lstadd_b.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcho <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/04 04:10:29 by tcho              #+#    #+#             */
-/*   Updated: 2018/11/10 00:15:45 by tcho             ###   ########.fr       */
+/*   Created: 2018/11/10 00:25:55 by tcho              #+#    #+#             */
+/*   Updated: 2018/11/10 00:29:50 by tcho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_word_length(char const *str, char del, int i)
+void	ft_lstadd_r(t_list **alst, t_list *new)
 {
-	int j;
+	t_list *current;
 
-	j = i;
-	if (!str)
-		return (0);
-	while (str[j] && (str[j] != del))
-		j++;
-	return (j - i);
+	if (!alst)
+		return ;
+	if (!(*alst))
+		*alst = new;
+	else
+	{
+		current = *alst;
+		while (current->next)
+			current = current->next;
+		current->next = new;
+	}
 }
