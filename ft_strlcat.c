@@ -6,7 +6,7 @@
 /*   By: tcho <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 01:12:19 by tcho              #+#    #+#             */
-/*   Updated: 2018/11/09 22:53:28 by tcho             ###   ########.fr       */
+/*   Updated: 2018/11/09 22:55:53 by tcho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 	j = dsize;
 	if (dstsize < dsize + 1)
 		return (ssize + dstsize);
-	while (i < size - dsize - 1)
+	while (i < dstsize - dsize - 1)
 	{
 		dst[j] = src[i];
 		i++;
