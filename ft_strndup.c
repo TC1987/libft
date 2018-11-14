@@ -6,7 +6,7 @@
 /*   By: tcho <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/05 17:02:09 by tcho              #+#    #+#             */
-/*   Updated: 2018/11/10 00:16:41 by tcho             ###   ########.fr       */
+/*   Updated: 2018/11/05 17:12:00 by tcho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strndup(const char *s1, size_t n)
 	char	*str;
 
 	i = 0;
-	if (!s1 || !(str = (char *)malloc(sizeof(char) * (n + 1))))
+	if (!(str = (char *)malloc(sizeof(char) * (n + 1))))
 		return (NULL);
 	while (i < n)
 	{

@@ -6,7 +6,7 @@
 /*   By: tcho <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/04 04:08:25 by tcho              #+#    #+#             */
-/*   Updated: 2018/11/10 00:14:39 by tcho             ###   ########.fr       */
+/*   Updated: 2018/11/04 04:10:23 by tcho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ int	ft_word_count(char const *str, char del)
 
 	i = 0;
 	count = 0;
-	if (!str)
-		return (0);
 	while (str[i])
 	{
 		if (str[i] != del)
