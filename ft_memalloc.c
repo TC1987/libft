@@ -6,7 +6,7 @@
 /*   By: tcho <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 02:48:40 by tcho              #+#    #+#             */
-/*   Updated: 2018/11/09 17:02:26 by tcho             ###   ########.fr       */
+/*   Updated: 2018/11/13 20:19:57 by tcho             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memalloc(size_t size)
 {
 	void	*ptr;
 
-	if (!(ptr = (void *)malloc(sizeof(void) * size)))
+	if (!(ptr = (void *)malloc(size)))
 		return (NULL);
 	ft_memset(ptr, 0, size);
 	return (ptr);
